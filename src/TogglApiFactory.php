@@ -1,10 +1,10 @@
 <?php
 
-namespace KMurgadella\TogglSdk\TogglApi;
+namespace KMurgadella\TogglSdk;
 
-use KMurgadella\TogglSdk\ApiManager;
+use KMurgadella\TogglSdk\TogglApi\MainApi;
 
-class TogglFactory
+class TogglApiFactory
 {
     public static function create($apiToken)
     {
