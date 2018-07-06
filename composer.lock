@@ -1,0 +1,50 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7e76d9e2001641a9c9b67e7e53b4625c",
+    "packages": [
+        {
+            "name": "kirianmurgadella/restapimanager",
+            "version": "1.1.0-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KirianM/restapimanager.git",
+                "reference": "2f603649c5be8ec771bd5f8eb33ebf3efcc91495"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KirianM/restapimanager/zipball/2f603649c5be8ec771bd5f8eb33ebf3efcc91495",
+                "reference": "2f603649c5be8ec771bd5f8eb33ebf3efcc91495",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KMurgadella\\RestApiManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kirian Murgadella",
+                    "email": "kirian@murgadella.com"
+                }
+            ],
+            "description": "Library to manage calls to a Restfull API",
+            "time": "2018-07-04T16:44:21+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "kirianmurgadella/restapimanager": 15
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

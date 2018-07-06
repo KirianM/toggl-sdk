@@ -1,0 +1,19 @@
+{
+    "name": "kirianmurgadella/toggl-sdk",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "KMurgadella\\TogglSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kirian Murgadella",
+            "email": "kirian@murgadella.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kirianmurgadella/restapimanager": "@alpha"
+    }
+}
