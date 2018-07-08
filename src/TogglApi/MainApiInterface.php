@@ -2,9 +2,10 @@
 
 namespace KMurgadella\TogglSdk\TogglApi;
 
-use KMurgadella\TogglSdk\TogglApi\Repository\Projects;
-use KMurgadella\TogglSdk\TogglApi\Repository\TimeEntries;
-use KMurgadella\TogglSdk\TogglApi\Repository\Workspaces;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\ClientsInterface;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\ProjectsInterface;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\TimeEntriesInterface;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\WorkspacesInterface;
 
 /**
  * Interface MainApiInterface
@@ -18,17 +19,22 @@ interface MainApiInterface
     public function me(): array;
 
     /**
-     * @return Workspaces
+     * @return WorkspacesInterface
      */
-    public function workspaces(): Workspaces;
+    public function workspaces(): WorkspacesInterface;
 
     /**
-     * @return TimeEntries
+     * @return TimeEntriesInterface
      */
-    public function timeEntries(): TimeEntries;
+    public function timeEntries(): TimeEntriesInterface;
 
     /**
-     * @return Projects
+     * @return ProjectsInterface
      */
-    public function projects(): Projects;
+    public function projects(): ProjectsInterface;
+
+    /**
+     * @return ClientsInterface
+     */
+    public function clients(): ClientsInterface;
 }

@@ -3,6 +3,7 @@
 namespace KMurgadella\TogglSdk\TogglApi\Repository;
 
 use KMurgadella\RestApiManager\ApiManagerInterface;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\RepositoryInterface;
 
 /**
  * Class AbstractRepository
