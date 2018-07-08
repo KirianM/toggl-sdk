@@ -2,13 +2,13 @@
 
 namespace KMurgadella\TogglSdk\TogglApi\Repository;
 
-use KMurgadella\RestApiManager\ApiManagerInterface;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\TimeEntriesInterface;
 
 /**
  * Class TimeEntries
  * @package TogglSdk\Repository
  */
-class TimeEntries extends AbstractRepository implements RepositoryInterface
+class TimeEntries extends AbstractRepository implements TimeEntriesInterface
 {
     /**
      * @var string

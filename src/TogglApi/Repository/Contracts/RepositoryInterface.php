@@ -1,6 +1,6 @@
 <?php
 
-namespace KMurgadella\TogglSdk\TogglApi\Repository;
+namespace KMurgadella\TogglSdk\TogglApi\Repository\Contracts;
 
 use KMurgadella\RestApiManager\ApiManagerInterface;
 

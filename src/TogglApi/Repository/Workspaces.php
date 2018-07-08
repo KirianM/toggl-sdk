@@ -2,11 +2,13 @@
 
 namespace KMurgadella\TogglSdk\TogglApi\Repository;
 
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\WorkspacesInterface;
+
 /**
  * Class Workspaces
  * @package TogglSdk\Repository
  */
-class Workspaces extends AbstractRepository implements RepositoryInterface
+class Workspaces extends AbstractRepository implements WorkspacesInterface
 {
     /**
      * @var string

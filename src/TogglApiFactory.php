@@ -4,9 +4,17 @@ namespace KMurgadella\TogglSdk;
 
 use KMurgadella\TogglSdk\TogglApi\MainApi;
 
+/**
+ * Class TogglApiFactory
+ * @package KMurgadella\TogglSdk
+ */
 class TogglApiFactory
 {
-    public static function create($apiToken)
+    /**
+     * @param $apiToken
+     * @return MainApi|null
+     */
+    public static function create(string $apiToken)
     {
         $instance = null;
 
