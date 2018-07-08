@@ -15,6 +15,7 @@ composer install kirianmurgadella/toggl-sdk
 ### 0.2.0
 
 - Added an Interface for each Toggl API Repository. This allows to override MainApi class keeping al its Abstracts and Interfaces.
+- Added Clients endpoints.
 
 ### 0.1.0
 
