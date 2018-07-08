@@ -12,6 +12,11 @@ composer install kirianmurgadella/toggl-sdk
 
 ## Changelog
 
+### 0.4.0
+
+- Added get and set methods for api_token.
+- Moved api_token hashing to authHeaders method. Now we save api_token plain an it's only hashed when is needed.
+
 ### 0.3.0
 
 - Added Toggl Reports API. **Read-Only functionality**.
