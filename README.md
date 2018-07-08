@@ -12,6 +12,10 @@ composer install kirianmurgadella/toggl-sdk
 
 ## Changelog
 
+### 0.3.0
+
+- Added Toggl Reports API. **Read-Only functionality**.
+
 ### 0.2.0
 
 - Added an Interface for each Toggl API Repository. This allows to override MainApi class keeping al its Abstracts and Interfaces.
