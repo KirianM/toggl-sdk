@@ -3,6 +3,8 @@
 namespace KMurgadella\TogglSdk\TogglApi;
 
 use KMurgadella\TogglSdk\AbstractTogglApi;
+use KMurgadella\TogglSdk\TogglApi\Repository\Clients;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\ClientsInterface;
 use KMurgadella\TogglSdk\TogglApi\Repository\Projects;
 use KMurgadella\TogglSdk\TogglApi\Repository\TimeEntries;
 use KMurgadella\TogglSdk\TogglApi\Repository\Workspaces;
@@ -58,6 +60,20 @@ class MainApi extends AbstractTogglApi implements MainApiInterface
     public function projects(): ProjectsInterface
     {
         $instance = new Projects($this->apiManager);
+
+        if (empty($instance)) {
+            //TODO: Throw Exception Invalid instance
+        }
+
+        return $instance;
+    }
+
+    /**
+     * @return ClientsInterface
+     */
+    public function clients(): ClientsInterface
+    {
+        $instance = new Clients($this->apiManager);
 
         if (empty($instance)) {
             //TODO: Throw Exception Invalid instance
