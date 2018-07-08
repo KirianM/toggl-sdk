@@ -24,7 +24,18 @@ class ApiManager extends RestApiManager
     {
         parent::__construct($apiUrl);
 
-        $this->apiToken = $this->hashToken($apiToken);
+        $this->setApiToken($apiToken);
+    }
+
+    public function getApiToken(): string
+    {
+        return $this->apiToken;
+    }
+
+    public function setApiToken(string $apiToken)
+    {
+        $this->apiToken = $apiToken;
+        return $this;
     }
 
     /**
@@ -61,6 +72,6 @@ class ApiManager extends RestApiManager
             throw new \Exception('No valid auth');
         }
 
-        return array_merge($headers, ['Authorization: Basic ' . $this->apiToken]);
+        return array_merge($headers, ['Authorization: Basic ' . $this->hashToken($this->getApiToken())]);
     }
 }

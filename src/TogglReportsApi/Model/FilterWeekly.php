@@ -21,7 +21,7 @@ class FilterWeekly extends Filter
     /**
      * @return string
      */
-    public function getGrouping(): string
+    public function getGrouping(): ?string
     {
         return $this->grouping;
     }
@@ -39,7 +39,7 @@ class FilterWeekly extends Filter
     /**
      * @return string
      */
-    public function getCalculate(): string
+    public function getCalculate(): ?string
     {
         return $this->calculate;
     }
