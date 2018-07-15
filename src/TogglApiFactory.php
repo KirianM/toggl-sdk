@@ -18,7 +18,8 @@ class TogglApiFactory
     {
         $instance = null;
 
-        $apiManager = new ApiManager($apiToken, 'https://www.toggl.com/api/v8/');
+        $apiManager = new ApiManager('https://www.toggl.com/api/v8/');
+        $apiManager->setApiToken($apiToken);
         if (!empty($apiManager)) {
             $instance = new MainApi($apiManager);
         }

@@ -18,7 +18,8 @@ class TogglReportsApiFactory
     {
         $instance = null;
 
-        $apiManager = new ApiManager($apiToken, 'https://www.toggl.com/reports/api/v2/');
+        $apiManager = new ApiManager('https://www.toggl.com/reports/api/v2/');
+        $apiManager->setApiToken($apiToken);
         if (!empty($apiManager)) {
             $instance = new ReportsApi($apiManager);
             $instance->setUserAgent($userAgent);

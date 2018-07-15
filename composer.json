@@ -13,7 +13,8 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "kirianmurgadella/restapimanager": "@alpha"
+        "kirianmurgadella/restapimanager": "^1.0"
     }
 }

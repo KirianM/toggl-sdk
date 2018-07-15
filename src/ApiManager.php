@@ -15,18 +15,6 @@ class ApiManager extends RestApiManager
      */
     protected $apiToken;
 
-    /**
-     * ApiManager constructor.
-     * @param string $apiToken
-     * @param string|null $apiUrl
-     */
-    function __construct(string $apiToken, string $apiUrl = null)
-    {
-        parent::__construct($apiUrl);
-
-        $this->setApiToken($apiToken);
-    }
-
     public function getApiToken(): string
     {
         return $this->apiToken;
