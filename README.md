@@ -14,6 +14,11 @@ composer install kirianmurgadella/toggl-sdk
 
 ### 0.4.0
 
+- Updated Rest API manager.
+- Added Tags repository.
+
+### 0.4.0
+
 - Added get and set methods for api_token.
 - Moved api_token hashing to authHeaders method. Now we save api_token plain an it's only hashed when is needed.
 
