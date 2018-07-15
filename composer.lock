@@ -4,21 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e76d9e2001641a9c9b67e7e53b4625c",
+    "content-hash": "423b933ae4550413162106bf72809c05",
     "packages": [
         {
             "name": "kirianmurgadella/restapimanager",
-            "version": "1.1.0-alpha",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KirianM/restapimanager.git",
-                "reference": "2f603649c5be8ec771bd5f8eb33ebf3efcc91495"
+                "reference": "34d8fe3331f7a6aa29f8d59a7268e402a6e3e6f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KirianM/restapimanager/zipball/2f603649c5be8ec771bd5f8eb33ebf3efcc91495",
-                "reference": "2f603649c5be8ec771bd5f8eb33ebf3efcc91495",
+                "url": "https://api.github.com/repos/KirianM/restapimanager/zipball/34d8fe3331f7a6aa29f8d59a7268e402a6e3e6f1",
+                "reference": "34d8fe3331f7a6aa29f8d59a7268e402a6e3e6f1",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
             },
             "type": "library",
             "autoload": {
@@ -33,17 +36,15 @@
                     "email": "kirian@murgadella.com"
                 }
             ],
-            "description": "Library to manage calls to a Restfull API",
-            "time": "2018-07-04T16:44:21+00:00"
+            "description": "Library to manage calls to a Rest API",
+            "time": "2018-07-15T11:58:17+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "kirianmurgadella/restapimanager": 15
-    },
-    "prefer-stable": false,
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
