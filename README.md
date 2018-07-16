@@ -12,6 +12,10 @@ composer install kirianmurgadella/toggl-sdk
 
 ## Changelog
 
+### 0.8.0
+
+- Fixed CREATE, UPDATE and DELETE requests data format
+
 ### 0.7.0
 
 - Implemented CREATE, UPDATE and DELETE methods/request to Clients, Projects, Tags and TimeEntries repositories.

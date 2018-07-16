@@ -52,12 +52,12 @@ class Projects extends AbstractRepository implements ProjectsInterface
 
     public function create(array $data): array
     {
-        return $this->apiManager->post($this->endpoint(self::$namespace), $data);
+        return $this->apiManager->post($this->endpoint(self::$namespace), ['project' => $data]);
     }
 
     public function update(int $entity_id, array $data): array
     {
-        return $this->apiManager->put($this->endpoint(self::$namespace . '/'. $entity_id), $data);
+        return $this->apiManager->put($this->endpoint(self::$namespace . '/'. $entity_id), ['project' => $data]);
     }
 
     public function delete(int $entity_id): array
