@@ -12,7 +12,12 @@ composer install kirianmurgadella/toggl-sdk
 
 ## Changelog
 
+### 0.7.0
+
+- Implemented CREATE, UPDATE and DELETE methods/request to Clients, Projects, Tags and TimeEntries repositories.
+
 ### 0.6.0
+
 - Added tags method to request Tags Repository.
 
 ### 0.5.0

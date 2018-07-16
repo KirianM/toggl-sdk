@@ -37,13 +37,18 @@ class Tags extends AbstractRepository implements TagsInterface
         return $this->apiManager->get($this->endpoint(Workspaces::$namespace . '/' . $workspace_id . '/' . self::$namespace));
     }
 
-    public function updateByTagId(int $tag_id, array $data): array
+    public function create(array $data): array
     {
-        return $this->apiManager->put($this->endpoint(self::$namespace . '/'. $tag_id), $data);
+        return $this->apiManager->post($this->endpoint(self::$namespace), $data);
     }
 
-    public function deleteByTagId(int $tag_id): array
+    public function update(int $entity_id, array $data): array
     {
-        return $this->apiManager->delete($this->endpoint(self::$namespace . '/'. $tag_id));
+        return $this->apiManager->put($this->endpoint(self::$namespace . '/'. $entity_id), $data);
+    }
+
+    public function delete(int $entity_id): array
+    {
+        return $this->apiManager->delete($this->endpoint(self::$namespace . '/'. $entity_id));
     }
 }

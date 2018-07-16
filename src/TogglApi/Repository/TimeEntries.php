@@ -39,4 +39,19 @@ class TimeEntries extends AbstractRepository implements TimeEntriesInterface
     {
         return $this->apiManager->get($this->endpoint(self::$namespace . '/' . 'current'));
     }
+
+    public function create(array $data): array
+    {
+        return $this->apiManager->post($this->endpoint(self::$namespace), $data);
+    }
+
+    public function update(int $entity_id, array $data): array
+    {
+        return $this->apiManager->put($this->endpoint(self::$namespace . '/'. $entity_id), $data);
+    }
+
+    public function delete(int $entity_id): array
+    {
+        return $this->apiManager->delete($this->endpoint(self::$namespace . '/'. $entity_id));
+    }
 }
