@@ -12,7 +12,10 @@ composer install kirianmurgadella/toggl-sdk
 
 ## Changelog
 
-### 0.4.0
+### 0.6.0
+- Added tags method to request Tags Repository.
+
+### 0.5.0
 
 - Updated Rest API manager.
 - Added Tags repository.

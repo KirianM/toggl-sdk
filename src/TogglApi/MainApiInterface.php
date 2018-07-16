@@ -4,6 +4,7 @@ namespace KMurgadella\TogglSdk\TogglApi;
 
 use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\ClientsInterface;
 use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\ProjectsInterface;
+use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\TagsInterface;
 use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\TimeEntriesInterface;
 use KMurgadella\TogglSdk\TogglApi\Repository\Contracts\WorkspacesInterface;
 
@@ -37,4 +38,9 @@ interface MainApiInterface
      * @return ClientsInterface
      */
     public function clients(): ClientsInterface;
+
+    /**
+     * @return TagsInterface
+     */
+    public function tags(): TagsInterface;
 }
