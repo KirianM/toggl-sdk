@@ -2,6 +2,7 @@
 
 namespace KMurgadella\TogglSdk;
 
+use KMurgadella\RestApiManager\Auth\AuthFactory;
 use KMurgadella\TogglSdk\TogglReportsApi\ReportsApi;
 
 /**
@@ -18,11 +19,13 @@ class TogglReportsApiFactory
     {
         $instance = null;
 
-        $apiManager = new ApiManager('https://www.toggl.com/reports/api/v2/');
-        $apiManager->setApiToken($apiToken);
-        if (!empty($apiManager)) {
-            $instance = new ReportsApi($apiManager);
-            $instance->setUserAgent($userAgent);
+        $auth = AuthFactory::create('basic', ['username' => $apiToken, 'password' => 'api_token']);
+        if (!empty($auth)) {
+            $apiManager = new ApiManager('https://www.toggl.com/reports/api/v2/', $auth);
+            if (!empty($apiManager)) {
+                $instance = new ReportsApi($apiManager);
+                $instance->setUserAgent($userAgent);
+            }
         }
 
         return $instance;
