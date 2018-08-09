@@ -11,31 +11,6 @@ use KMurgadella\RestApiManager\ApiManager as RestApiManager;
 class ApiManager extends RestApiManager
 {
     /**
-     * @var string
-     */
-    protected $apiToken;
-
-    public function getApiToken(): string
-    {
-        return $this->apiToken;
-    }
-
-    public function setApiToken(string $apiToken)
-    {
-        $this->apiToken = $apiToken;
-        return $this;
-    }
-
-    /**
-     * @param string $apiToken
-     * @return string
-     */
-    public function hashToken(string $apiToken)
-    {
-        return base64_encode($apiToken . ':api_token');
-    }
-
-    /**
      * @param string $method
      * @param string $url
      * @param array $data
@@ -46,20 +21,5 @@ class ApiManager extends RestApiManager
     {
         $headers = $this->authHeaders($headers);
         return parent::request($method, $url, $data, $headers);
-    }
-
-    /**
-     * @param array $headers
-     * @return array
-     * @throws \Exception
-     */
-    public function authHeaders(array $headers = []): array
-    {
-        if (empty($this->apiToken)) {
-            //TODO: Throw no valid Auth
-            throw new \Exception('No valid auth');
-        }
-
-        return array_merge($headers, ['Authorization: Basic ' . $this->hashToken($this->getApiToken())]);
     }
 }

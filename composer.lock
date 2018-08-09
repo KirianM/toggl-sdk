@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "423b933ae4550413162106bf72809c05",
+    "content-hash": "3400a6129cf9612532af46e740083338",
     "packages": [
         {
             "name": "kirianmurgadella/restapimanager",
-            "version": "1.1.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KirianM/restapimanager.git",
-                "reference": "34d8fe3331f7a6aa29f8d59a7268e402a6e3e6f1"
+                "reference": "a19df4fb6fc6a36d52432b7f6fbebf8bf73040fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KirianM/restapimanager/zipball/34d8fe3331f7a6aa29f8d59a7268e402a6e3e6f1",
-                "reference": "34d8fe3331f7a6aa29f8d59a7268e402a6e3e6f1",
+                "url": "https://api.github.com/repos/KirianM/restapimanager/zipball/a19df4fb6fc6a36d52432b7f6fbebf8bf73040fd",
+                "reference": "a19df4fb6fc6a36d52432b7f6fbebf8bf73040fd",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                 }
             ],
             "description": "Library to manage calls to a Rest API",
-            "time": "2018-07-15T11:58:17+00:00"
+            "time": "2018-08-08T15:10:58+00:00"
         }
     ],
     "packages-dev": [],

@@ -15,6 +15,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "kirianmurgadella/restapimanager": "^1.0"
+        "kirianmurgadella/restapimanager": "^1.3"
     }
 }

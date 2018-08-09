@@ -12,9 +12,13 @@ composer install kirianmurgadella/toggl-sdk
 
 ## Changelog
 
+### 0.9.0
+
+- Updated RestApiManager to use it's Http Basic Authentication.
+
 ### 0.8.0
 
-- Fixed CREATE, UPDATE and DELETE requests data format
+- Fixed CREATE, UPDATE and DELETE requests data format.
 
 ### 0.7.0
 
